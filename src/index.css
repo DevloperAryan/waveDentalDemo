@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Comic+Relief:wght@400;700&family=Cookie&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@import "tailwindcss";
+
+
+
+.fontLato{
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+}
+.fontCookie{
+  font-family: "Cookie", cursive;
+  font-style: normal;
+}
+.fontComic{
+  font-family: "Comic Relief", system-ui;
+  font-style: normal;
+}
+
+
+@theme {
+  /* --- CUSTOM FONTS --- */
+  /* This overrides the default 'font-sans' and adds 'font-display' */
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --font-display: "Playfair Display", serif;
+
+  /* --- CUSTOM ANIMATIONS --- */
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-fade-in-up: fadeInUp 0.8s ease-out forwards;
+
+  /* --- CUSTOM COLORS --- */
+  /* Wave */
+  --color-wave-400: #2ae5b2;
+  --color-wave-500: #0bc894;
+  --color-wave-600: #06a478;
+  --color-wave-700: #088362;
+  --color-wave-800: #0b6850;
+  --color-wave-900: #0d5543;
+  --color-wave-950: #043228;
+
+  /* Ocean */
+  --color-ocean-400: #38bdf8;
+  --color-ocean-500: #0ea5e9;
+  --color-ocean-600: #0284c7;
+  --color-ocean-700: #0369a1;
+  --color-ocean-800: #075985;
+  --color-ocean-900: #0c4a6e;
+
+  /* Sand */
+  --color-sand-50: #faf9f6;
+  --color-sand-100: #f5f5f4;
+  --color-sand-200: #e7e5e4;
+  --color-sand-300: #d6d3d1;
+  --color-sand-400: #a8a29e;
+  --color-sand-500: #78716c;
+}
+
+/* --- KEYFRAMES --- */
+/* In v4, these are just standard CSS keyframes */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* --- BASE STYLES --- */
+body {
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* --- COMPONENTS --- */
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  /* font-family: 'Playfair Display', serif; */
+    font-family: "Lato", sans-serif;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+section {
+  scroll-margin-top: 80px;
+}
